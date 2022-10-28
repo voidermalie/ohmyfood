@@ -1,1 +1,8 @@
-/*encore rien ici*/
+/*fonts*/
+h1, h2, h3 {
+    font-family: 'Shrikhand', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
