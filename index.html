@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html lang="fr">
+  <html id="homepage" lang="fr">
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-with, initial-scale=1">
@@ -15,11 +15,16 @@
     </head>
     <body>
       <header>
-        <!--logo-->
-        <img src="images/logo/ohmyfood.png" alt="logo de Ohmyfood">
+        <img id="logo" src="images/logo/ohmyfood.png" alt="logo de Ohmyfood">
       </header>
       <section id="location">
-        <!--location-->
+        <i class="fa-solid fa-location-dot"></i>
+        <form id="search-form" method="post" action="traitement.php">
+          <p>
+            <label for="city">Paris, Belleville</label>
+            <input type="text" name="city" id="city" maxlength="20" placeholder="Paris, France">
+          </p>
+        </form>
       </section>
       <section id="presentation">
         <h1>Réservez le menu qui vous convient</h1>
@@ -27,8 +32,24 @@
         <button>Explorer nos restaurants</button>
       </section>
       <section id="howto">
-        <!--howto-->
         <h2>Fonctionnement</h2>
+        <div id="howto-container">
+          <div class="howto-item">
+            <p class="howto-number">1</p>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Choisissez un restaurant</p>
+          </div>
+          <div class="howto-item">
+            <p class="howto-number">2</p>
+            <i class="fa-solid fa-list-ul"></i>
+            <p>Composez votre menu</p>
+          </div>
+          <div class="howto-item">
+            <p class="howto-number">3</p>
+            <i class="fa-solid fa-store"></i>
+            <p>Dégustez au restaurant</p>
+          </div>
+        </div>
       </section>
       <section id="restaurants">
         <h2>Restaurants</h2>
@@ -38,9 +59,9 @@
       </section>
       <footer>
       <!--maybe svg ohmyfood-->
-      <ul>
-        <li>Proposer un restaurant</li>
-        <li>Devenir partenaire</li>
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fa-solid fa-utensils"></i></span>Proposer un restaurant</li>
+        <li><span class="fa-li"><i class="fa-solid fa-handshake-angle"></i></span>Devenir partenaire</li>
         <li>Mentiones légales</li>
         <li>Contact</li>
       </ul>
