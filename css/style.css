@@ -24,8 +24,14 @@ p {
 #homepage h1 {
     font-size: 1.4rem;
     font-weight: 600;
+    text-align: center;
+    margin: 0 40px;
 }
-
+#presentation p {
+    font-weight: 200;
+    font-size: 1.1rem;
+    text-align: center;
+}
 /*header*/
 header {
     display: flex;
@@ -43,25 +49,25 @@ header {
     background-color: #EAEAEA;
     padding: 15px;
     justify-content: center;
+    box-shadow: inset 0px 3px 6px -3px #7E7E7E;
 }
 #city {
     display: none;
 }
-/*
+
 .fa-location-dot {
-    padding: 5px;
     margin-right: 10px;
 }
-*/
 
-/*Presentation*/
+/*presentation*/
 #presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 50px 30px;
     background-color: #F7F7F7;
+    gap: 15px;
 }
 
 button {
@@ -69,6 +75,7 @@ button {
     color: white;
     padding: 15px 20px;
     border-radius: 25px;
+    border: none;
 }
 
 /*Fonctionnement*/
@@ -80,7 +87,9 @@ button {
 #howto-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
+    padding: 10px;
+    margin-top: 20px;
 }
 .howto-item {
     display: flex;
@@ -88,27 +97,68 @@ button {
     border-radius: 20px;
     background-color: #F7F7F7;
     padding: 25px;
+    align-items: center;
 }
 .howto-number {
     background-color: #9356DC;
     color: white;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     font-size: 0.9rem;
+    position: relative;
+    right: 35px;
+    padding: 3px;
 }
 #howto i {
     color: #7E7E7E;
+    position: relative;
+    right: 15px;
+    top: 3px;
 }
 
 /*restaurants*/
 #restaurants {
-    margin: 50px 20px;
+    margin: 50px 0;
+    background-color: #F7F7F7;
+}
+.container-restaurants {
+    padding: 20px;
+}
+.card-restaurant {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #eaeaea;
+    height: 250px;
+    width: 90%;
+    margin: 0 auto;
+}
+.img-restaurant {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    height: 70%;
+}
+.description-restaurant {
+    background-color: white;
+    display: flex;
+    height: 30%;
+    border-radius: 0 0 20px 20px;
+    justify-content: space-between;
+}
+.new {
+    color: #00886A;
+    background-color: #94E2D1;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: fit-content;
+    font-size: 0.8rem;
 }
 
 /*footer*/
 footer {
     background-color: #353535;
-    color: white;
+    color: #E7E7E7;
 }
