@@ -86,7 +86,7 @@ header {
     gap: 15px;
 }
 
-button {
+.order, .explore {
     background: linear-gradient(#FF79DA, #9356DC);
     color: white;
     padding: 15px 20px;
@@ -211,13 +211,16 @@ footer, footer a {
     display: flex;
 }
 .btn-backhome {
-   all: unset; 
+    position: relative;
+    right: 70px;
+    top: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 .fa-arrow-left {
     font-size: 1.3rem;
     align-self: center;
-    position: relative;
-    right: 70px;
 }
 /*restaurant-sub pages*/
 .img-menu {
