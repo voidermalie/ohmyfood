@@ -32,6 +32,10 @@ p {
     font-size: 1.1rem;
     text-align: center;
 }
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 /*header*/
 header {
     display: flex;
@@ -120,11 +124,16 @@ button {
 
 /*restaurants*/
 #restaurants {
-    margin: 50px 0;
+    padding: 50px 0;
     background-color: #F7F7F7;
 }
+#restaurants h2 {
+    padding-left: 20px;
+}
 .container-restaurants {
-    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .card-restaurant {
     display: flex;
@@ -147,6 +156,16 @@ button {
     height: 30%;
     border-radius: 0 0 20px 20px;
     justify-content: space-between;
+}
+.text-description {
+    padding: 10px;
+}
+.text-description p {
+    font-weight: 200;
+}
+.fa-heart {
+    font-size: 1.5rem;
+    padding: 20px;
 }
 .new {
     color: #00886A;
