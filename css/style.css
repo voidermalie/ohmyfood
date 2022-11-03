@@ -181,3 +181,6 @@ footer {
     background-color: #353535;
     color: #E7E7E7;
 }
+.footer-logo {
+    filter: invert(99%) sepia(17%) saturate(245%) hue-rotate(141deg) brightness(117%) contrast(100%);
+}
