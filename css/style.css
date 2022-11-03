@@ -36,15 +36,26 @@ h3 {
     font-size: 1.1rem;
     font-weight: 600;
 }
+/*liens*/
+a {
+    text-decoration: none;
+    color: initial;
+}
 /*header*/
 header {
     display: flex;
     justify-content: center;
 }
+/*
 #logo {
-    padding: 30px;
+    padding: 10px;
     padding-bottom: 12px;
     width: 60%;
+}
+*/
+.header-logo {
+    padding: 20px 0 0 0;
+    width: 40%;
 }
 
 /*location*/
@@ -177,10 +188,13 @@ button {
 }
 
 /*footer*/
-footer {
+footer, footer a {
     background-color: #353535;
     color: #E7E7E7;
 }
 .footer-logo {
     filter: invert(99%) sepia(17%) saturate(245%) hue-rotate(141deg) brightness(117%) contrast(100%);
+    padding-left: 20px;
+    width: 25%;
+    padding-top: 20px;
 }
