@@ -46,17 +46,9 @@ header {
     display: flex;
     justify-content: center;
 }
-/*
-#logo {
-    padding: 10px;
-    padding-bottom: 12px;
-    width: 60%;
-}
-*/
+
 .header-logo {
-    padding: 20px 0 0 0;
-    min-width: 180px;
-    min-height: 80px;
+    padding: 30px 0 10px 0;
 }
 
 /*location*/
