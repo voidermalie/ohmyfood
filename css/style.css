@@ -116,6 +116,7 @@ header {
     background-color: #F7F7F7;
     padding: 25px;
     align-items: center;
+    box-shadow: 1px 1px 5px #eaeaea;
 }
 .howto-number {
     background-color: #9356DC;
@@ -143,12 +144,12 @@ header {
 }
 #restaurants h2 {
     padding-left: 20px;
-    padding-bottom: 20px;
 }
 .container-restaurants {
     gap: 20px;
     display: flex;
     flex-direction: column;
+    margin: 20px;
 }
 .card-restaurant {
     display: flex;
@@ -156,8 +157,8 @@ header {
     border: 1px solid transparent;
     border-radius: 20px;
     box-shadow: 1px 1px 5px #eaeaea;
-    height: 250px;
-    width: 90%;
+    width: 100%;
+    aspect-ratio: 4/3;
     margin: 0 auto;
 }
 .img-restaurant {
@@ -188,13 +189,13 @@ header {
 .new {
     color: #00886A;
     background-color: #94E2D1;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 4px;
+    padding: 6px 12px;
     max-width: fit-content;
     font-size: 0.8rem;
     position: absolute;
     top: 20px;
-    left: 290px;
+    left: 250px;
 }
 
 /*footer*/
