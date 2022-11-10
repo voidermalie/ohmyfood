@@ -92,8 +92,11 @@ header {
     box-shadow: 0 5px 8px lightgray;
 }
 .order:hover, .explore:hover {
-    opacity: 0.9;
-    box-shadow: 0 5px 4px lightgray;
+    filter: brightness(1.1);
+    box-shadow: 0 5px 10px gray;
+}
+.order {
+    margin: 30px auto;
 }
 
 /*Fonctionnement*/
@@ -116,7 +119,14 @@ header {
     background-color: #F7F7F7;
     padding: 25px;
     align-items: center;
-    box-shadow: 1px 1px 5px #eaeaea;
+    box-shadow: 1px 5px 10px #eaeaea;
+    transition: background-color 700ms,
+    border 700ms;
+
+}
+.howto-item:hover {
+    background-color: #F5EDFD;
+    border: 1px solid #F5EDFD;
 }
 .howto-number {
     background-color: #9356DC;
@@ -135,8 +145,12 @@ header {
     position: relative;
     right: 15px;
     top: 3px;
+    transition: color 700ms;
+    font-size: 1.2rem;
 }
-
+#howto i:hover {
+    color: #9356DC;
+}
 /*restaurants*/
 #restaurants {
     padding: 50px 0;
@@ -197,6 +211,21 @@ header {
     top: 20px;
     left: 250px;
 }
+/*heart*/
+.description-restaurant .empty-heart {
+    position: absolute;
+    right: 10px;
+    opacity: 1;
+    transition: opacity 400ms;
+}
+.description-restaurant .full-heart {
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+}
+.description-restaurant .empty-heart:hover {
+    opacity: 0;
+}
 
 /*footer*/
 footer, footer a {
@@ -255,8 +284,49 @@ footer p {
     padding: 20px;
     position: relative;
     bottom: 55px;
+    display: flex;
+    flex-direction: column;
 }
 .title-restaurant {
+    display: flex;
+    justify-content: space-between;
+}
+/*menu*/
+.menu-restaurant {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.menu-card h2 {
+    font-weight: 300;
+    font-size: 1rem;
+    position: relative;
+}
+.menu-title-border {
+    border-bottom: 3px solid #99E2D0;
+    position: absolute;
+
+}
+
+.menu-card p {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px #eaeaea;
+    background-color: white;
+    padding: 15px;
+}
+.menu-item-detail {
     display: flex;
     justify-content: space-between;
 }
