@@ -11,6 +11,8 @@ main {
 /*fonts*/
 h1, h2, h3 {
     font-family: 'Shrikhand', cursive;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 p {
@@ -90,6 +92,10 @@ header {
     border-radius: 25px;
     border: none;
     box-shadow: 0 5px 8px lightgray;
+    filter: brightness(1);
+    transition: filter 400ms,
+    box-shadow 400ms;
+    font-size: 0.9rem;
 }
 .order:hover, .explore:hover {
     filter: brightness(1.1);
@@ -97,6 +103,7 @@ header {
 }
 .order {
     margin: 30px auto;
+    padding: 15px 40px;
 }
 
 /*Fonctionnement*/
