@@ -349,6 +349,9 @@ footer i {
 .menu-card p {
     font-weight: 300;
     font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .menu-card {
     display: flex;
