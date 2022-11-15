@@ -381,4 +381,11 @@ footer i {
         width: 40%;
         flex: 20%;
     }
+    #howto-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .howto-item {
+        width: min(100%, 300px);
+    }
 }
