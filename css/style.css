@@ -359,7 +359,7 @@ footer i {
     display: flex;
     flex-direction: column;
     border: 1px solid transparent;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     box-shadow: 0 1px 15px 3px #eaeaea;
     background-color: white;
     padding: 10px;
@@ -368,6 +368,26 @@ footer i {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
+}
+
+/*menu-item animation*/
+.menu-item-wrapper {
+    display: flex;
+}
+.menu-item {
+    width: 82%;
+}
+.menu-item-click {
+    width: 18%;
+    font-size: 1.3rem;
+    background: #99E2D0;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item-wrapper:hover menu-item-click {
 }
 
 /*mediaquery-desktop*/
