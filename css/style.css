@@ -110,6 +110,7 @@ header {
 }
 
 /*Fonctionnement*/
+
 #howto {
     display: flex;
     flex-direction: column;
@@ -131,6 +132,7 @@ header {
     align-items: center;
     box-shadow: 1px 5px 10px #eaeaea;
     transition: background-color 700ms,
+    color 700ms,
     border 700ms;
 
 }
@@ -138,6 +140,20 @@ header {
     background-color: #F5EDFD;
     border: 1px solid #F5EDFD;
 }
+
+.howto-icon {
+    color: #7E7E7E;
+    position: relative;
+    right: 15px;
+    font-size: 1.2rem;
+    min-width: 10%;
+}
+
+.howto-item:hover .howto-icon {
+    color: #9356DC;
+}
+
+
 .howto-number {
     background-color: #9356DC;
     color: white;
@@ -150,18 +166,6 @@ header {
     right: 35px;
     padding: 3px;
 }
-#howto i {
-    color: #7E7E7E;
-    position: relative;
-    right: 15px;
-    top: 3px;
-    transition: color 700ms;
-    font-size: 1.2rem;
-}
-#howto i:hover {
-    color: #9356DC;
-}
-
 /*restaurants*/
 
 #restaurants {
@@ -175,7 +179,7 @@ header {
     gap: 20px;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    padding: 20px;
 }
 .card-restaurant {
     display: flex;
@@ -356,4 +360,17 @@ footer i {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
+}
+
+/*mediaquery-desktop*/
+
+@media screen and (min-width: 820px) {
+    .container-restaurants {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .link-restaurant {
+        width: 40%;
+        flex: 20%;
+    }
 }
