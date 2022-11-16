@@ -99,6 +99,7 @@ header {
     transition: filter 400ms,
     box-shadow 400ms;
     font-size: 0.9rem;
+    cursor: pointer;
 }
 .order:hover, .explore:hover {
     filter: brightness(1.1);
