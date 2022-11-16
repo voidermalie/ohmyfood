@@ -363,10 +363,11 @@ footer i {
     display: flex;
     flex-direction: column;
     border: 1px solid transparent;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px;
     box-shadow: 0 1px 15px 3px #eaeaea;
     background-color: white;
     padding: 10px;
+    transition: border-radius 300ms;
 }
 .menu-item-detail {
     display: flex;
@@ -390,8 +391,14 @@ footer i {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 300ms;
 }
-.menu-item-wrapper:hover menu-item-click {
+.menu-item-wrapper:hover .menu-item-click {
+    opacity: 1;
+}
+.menu-item-wrapper:hover .menu-item {
+    border-radius: 20px 0 0 20px;
 }
 
 /*mediaquery-desktop*/
