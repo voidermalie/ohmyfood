@@ -359,7 +359,7 @@ footer i {
 .menu-card {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 .menu-item {
     display: flex;
@@ -375,14 +375,17 @@ footer i {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
+    width: 100%;
+    transition: width 1000ms;
 }
 
 /*menu-item animation*/
 .menu-item-wrapper {
     display: flex;
+    position: relative;
 }
 .menu-item {
-    width: 82%;
+    width: 100%;
 }
 .menu-item-click {
     width: 18%;
@@ -395,13 +398,17 @@ footer i {
     align-items: center;
     opacity: 0;
     transition: opacity 300ms;
+    position: absolute;
+    height: 100%;
+    right: -80px;
 }
 .menu-item-wrapper:hover .menu-item-click {
     opacity: 1;
 }
 .menu-item-wrapper:hover .menu-item {
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px;
 }
+
 
 /*heart menu*/
 .empty-heart2 {
@@ -444,4 +451,20 @@ footer i {
     .howto-item {
         width: min(100%, 300px);
     }
+}
+
+/*test*/
+
+.menu-item-click {
+    transition: right 400ms linear;
+}
+.menu-item-wrapper {
+    transition: width 400ms linear;
+}
+.menu-item-wrapper:hover .menu-item-click {
+    right: 0px;
+}
+
+.menu-item-wrapper:hover .menu-item-detail {
+    width: 80%;
 }
