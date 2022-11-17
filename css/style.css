@@ -400,7 +400,7 @@ footer i {
     transition: opacity 300ms;
     position: absolute;
     height: 100%;
-    right: -80px;
+    right: 0px;
 }
 .menu-item-wrapper:hover .menu-item-click {
     opacity: 1;
