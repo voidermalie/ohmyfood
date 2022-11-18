@@ -363,12 +363,10 @@ footer i {
 }
 .menu-item {
     display: flex;
-    flex-direction: column;
-    border: 1px solid transparent;
     border-radius: 20px;
     box-shadow: 0 1px 15px 3px #eaeaea;
     background-color: white;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     transition: border-radius 300ms;
 }
 .menu-item-detail {
@@ -382,10 +380,11 @@ footer i {
 /*menu-item animation*/
 .menu-item-wrapper {
     display: flex;
-    position: relative;
 }
 .menu-item {
     width: 100%;
+    position: relative;
+    height: 62px;
 }
 .menu-item-click {
     width: 18%;
@@ -398,16 +397,16 @@ footer i {
     align-items: center;
     opacity: 0;
     transition: opacity 300ms;
-    transition: width ease-in-out 200ms;
-    position: absolute;
-    height: 100%;
-    right: 0px;
-    width: 0%;
+    position: relative;
+    height: 62px;
+    bottom: 10px;
+    margin-left: auto;
+    padding-right: 0;
 }
-.menu-item-wrapper:hover .menu-item-click {
+.menu-item:hover .menu-item-click {
     opacity: 1;
-    width: 18%;
 }
+
 .menu-item-wrapper:hover .menu-item {
     border-radius: 20px;
 }
@@ -458,19 +457,10 @@ footer i {
 
 /*test*/
 
-.menu-item-click {
-    transition: right 400ms linear;
-}
-.menu-item-wrapper {
-    transition: width 400ms linear;
-}
 .menu-item-wrapper:hover .menu-item-click {
     right: 0px;
 }
 
-.menu-item-wrapper:hover .menu-item-detail {
-    width: 80%;
-}
 .menu-item-click-icon {
     transform: rotate (0deg);
     transition: transform 300ms;
