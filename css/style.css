@@ -376,7 +376,7 @@ footer i {
     justify-content: space-between;
     margin-top: 5px;
     width: 100%;
-    transition: width 1000ms;
+    transition: width ease-in-out 400ms;
 }
 
 /*menu-item animation*/
@@ -398,12 +398,15 @@ footer i {
     align-items: center;
     opacity: 0;
     transition: opacity 300ms;
+    transition: width ease-in-out 200ms;
     position: absolute;
     height: 100%;
     right: 0px;
+    width: 0%;
 }
 .menu-item-wrapper:hover .menu-item-click {
     opacity: 1;
+    width: 18%;
 }
 .menu-item-wrapper:hover .menu-item {
     border-radius: 20px;
@@ -468,3 +471,11 @@ footer i {
 .menu-item-wrapper:hover .menu-item-detail {
     width: 80%;
 }
+.menu-item-click-icon {
+    transform: rotate (0deg);
+    transition: transform 300ms;
+}
+.menu-item-wrapper:hover .menu-item-click-icon {
+    transform: rotate (-360deg);
+}
+
