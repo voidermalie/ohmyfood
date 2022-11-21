@@ -50,6 +50,7 @@ a {
     text-decoration: none;
     color: initial;
 }
+
 /*header*/
 header {
     display: flex;
@@ -61,6 +62,7 @@ header {
     max-width: 45%;
 }
 
+/*HOMEPAGE*/
 /*location*/
 #location {
     display: flex;
@@ -281,7 +283,8 @@ footer i {
     gap: 10px;
 }
 
-/*header-subpages*/
+/*SUBPAGES*/
+/*header*/
 
 .subheader {
     display: flex;
@@ -300,7 +303,7 @@ footer i {
 }
 
 
-/*restaurant-sub pages*/
+/*restaurant*/
 
 .img-menu {
     width: 100%;
@@ -405,9 +408,9 @@ footer i {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 300ms ease-in,
-    right 400ms ease-in,
-    width 1s ease-in;
+    transition: opacity 300ms,
+    right 1s,
+    width 1s;
     position: relative;
     height: 62px;
     bottom: 10px;
@@ -421,16 +424,21 @@ footer i {
     width: 20%;
 }
 
+.menu-item:hover .menu-item-price {
+    right: 45px;
+}
+
+
+/*rotating icon*/
 
 .menu-item-click-icon {
-    transition: transform 400ms ease-in;
+    transition: transform 600ms 250ms;
 }
 .menu-item:hover .menu-item-click-icon {
     transform: rotate(360deg);
 }
-.menu-item:hover .menu-item-price {
-    right: 45px;
-}
+
+/*menu progressive appear*/
 
 
 /*heart menu*/
