@@ -439,7 +439,20 @@ footer i {
 }
 
 /*menu progressive appear*/
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
 
+}
+.menu-card {
+    animation: slideIn 3s linear;
+}
 
 /*heart menu*/
 .empty-heart2 {
