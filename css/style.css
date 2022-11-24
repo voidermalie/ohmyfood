@@ -498,9 +498,17 @@ footer i {
 }
 
 /*spinner*/
+
+/*not good
 .spinner {
     background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
 }
+*/
+
 .spinner::before {
     content: "";
     height: 60px;
@@ -515,7 +523,7 @@ footer i {
     transform: translate3d(-50%, -50%, 0);
     animation: linear infinite spinner 4s;
     animation-fill-mode: forwards;
-    transition: opacity 6s;
+    transition: opacity ease-in 3s;
     background: white;
 }
 
