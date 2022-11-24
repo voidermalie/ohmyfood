@@ -508,7 +508,17 @@ footer i {
     z-index: 15;
 }
 */
-
+.container-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 100;
+    animation: linear container-spinner 3s;
+    animation-fill-mode: forwards;
+}
 .spinner::before {
     content: "";
     height: 60px;
@@ -521,7 +531,7 @@ footer i {
     left: 50%;
     z-index: 10;
     transform: translate3d(-50%, -50%, 0);
-    animation: linear infinite spinner 4s;
+    animation: linear spinner 3s;
     animation-fill-mode: forwards;
     transition: opacity ease-in 3s;
     background: white;
@@ -532,9 +542,24 @@ footer i {
       transform: translate3d(-50%, -50%, 0) rotate(0deg);
       opacity: 1;
     }
+    90% {
+        opacity: 1;
+    }
     100% {
       transform: translate3d(-50%, -50%, 0) rotate(360deg);
       opacity: 0;
     }
   }
+
+@keyframes container-spinner {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
