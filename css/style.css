@@ -49,6 +49,7 @@ footer li {
 a {
     text-decoration: none;
     color: initial;
+    cursor: pointer;
 }
 
 /*header*/
@@ -251,6 +252,7 @@ header {
 
 .heart-description:hover .full-heart {
     opacity: 1;
+    cursor: pointer;
 }
 .heart-description:hover .empty-heart {
     opacity: 0;
@@ -328,6 +330,7 @@ footer i {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    cursor: default;
 }
 
 /*menu*/
@@ -380,6 +383,7 @@ footer i {
     height: 62px;
     transition: border-radius 300ms;
     overflow: hidden;
+    cursor: default;
 }
 .menu-item-text {
     flex: 1;
@@ -422,6 +426,7 @@ footer i {
 .menu-item:hover .menu-item-click {
     opacity: 1;
     width: 20%;
+    cursor: pointer;
 }
 
 .menu-item:hover .menu-item-price {
@@ -472,6 +477,7 @@ footer i {
 
 .heart-description:hover .full-heart2 {
     opacity: 1;
+    cursor: pointer;
 }
 .heart-description:hover .empty-heart2 {
     opacity: 0;
