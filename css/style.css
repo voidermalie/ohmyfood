@@ -519,6 +519,9 @@ footer i {
     #presentation {
         gap: 25px;
     }
+    .menu-card h2:after {
+        width: 40%;
+    }
 }
 
 /*spinner*/
