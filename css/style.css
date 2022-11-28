@@ -302,6 +302,7 @@ footer i {
     cursor: pointer;
     position: absolute;
     left: 20px;
+    color: black;
 }
 .fa-arrow-left {
     font-size: 1.3rem;
