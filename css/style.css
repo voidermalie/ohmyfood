@@ -462,9 +462,16 @@ footer i {
     }
 
 }
-.menu-card {
-    animation: slideIn 3s linear;
+.menu-card1 {
+    animation: slideIn 400ms 0ms;
 }
+.menu-card2 {
+    animation: slideIn 400ms 100ms;
+}
+.menu-card3 {
+    animation: slideIn 400ms 150ms;
+}
+
 
 /*heart menu*/
 .empty-heart2 {
@@ -490,51 +497,8 @@ footer i {
     opacity: 0;
 }
 
-/*mediaquery-desktop*/
-
-@media screen and (min-width: 820px) {
-    .container-restaurants {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 30px 150px;
-        gap: 50px;
-    }
-    .link-restaurant {
-        width: 40%;
-        flex: 20%;
-    }
-    #howto-container {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .howto-item {
-        width: min(100%, 300px);
-    }
-    h2 {
-        margin: 0 auto;
-    }
-    #restaurants h2 {
-        padding-left: 0;
-    }
-    #presentation {
-        gap: 25px;
-    }
-    .menu-card h2:after {
-        width: 40%;
-    }
-}
-
 /*spinner*/
 
-/*not good
-.spinner {
-    background: white;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 15;
-}
-*/
 .container-spinner {
     position: fixed;
     top: 0;
@@ -592,3 +556,37 @@ footer i {
     }
 }
 
+
+/*mediaquery-desktop*/
+
+@media screen and (min-width: 820px) {
+    .container-restaurants {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px 150px;
+        gap: 50px;
+    }
+    .link-restaurant {
+        width: 40%;
+        flex: 20%;
+    }
+    #howto-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .howto-item {
+        width: min(100%, 300px);
+    }
+    h2 {
+        margin: 0 auto;
+    }
+    #restaurants h2 {
+        padding-left: 0;
+    }
+    #presentation {
+        gap: 25px;
+    }
+    .menu-card h2:after {
+        width: 40%;
+    }
+}
