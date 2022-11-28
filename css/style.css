@@ -420,20 +420,16 @@ footer i {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transition: opacity 300ms,
-    right 1s,
+    transition: right 1s,
     width 1s;
     position: relative;
     height: 62px;
     bottom: 10px;
-    margin-left: auto;
     left: 5px;
     right: -21px;
     width: 0;
 }
 .menu-item:hover .menu-item-click {
-    opacity: 1;
     width: 20%;
     cursor: pointer;
 }
