@@ -1,10 +1,10 @@
 # Hello 🍴
-[This](https://voidermalie.github.io/ohmyfood) project was part of my web developer course at OpenClassrooms and it showcases some fun CSS animations including
+[This](https://voidermalie.github.io/ohmyfood) project was part of my Web Developer course at OpenClassrooms and it showcases some fun CSS animations including
 - a page-load spinner
 - hearts that you can fill with *love* and *color*
 - movement, movement, movement
 
-The site itself is static, and I followed a briefing and a mockup to integrate the pages with a mobile-first approach, in fully responsive.
+The site itself is static, and I followed a briefing and a mockup to integrate the pages with a mobile-first approach. It is fully responsive.
 
 ## 💟 Technologies Used
     HTML5
